@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+	background: #2980b9; 
+	background: -webkit-linear-gradient(to right, #2c3e50, #2980b9); 
+	background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+
+header {
+	width: auto;
+	height: 50xp;
+	background: #1e3c72;
+	background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+	background: linear-gradient(to right, #2a5298, #1e3c72); 
+	border-width: 1px;
+	border-style: solid;
+	font-size: 30px;
+	line-height: 1;
+	text-align: center;
+	display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+
+header img{
+	width: 50px;
+	height: 50px;
+}
+
+nav{
+	background-color: #444;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	padding: 10px;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+nav ul li{
+	margin: 0 10px;
+	display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a{
+	color: #fff;
+	width: 50px;
+    height: 18px;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+	color:#ccc;
+}
+
+#columnas{
+	column-count: 3;
+	column-gap: 25px;
+}
+
+div.Nosotros{
+	padding: 8px 8px 8px 8px;
+	background: #757F9A; 
+	background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A); 
+	background: linear-gradient(to right, #D7DDE8, #757F9A);
+	border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+	align-items: center;
+    border-radius: 25px 25px 25px 25px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) ;
+}
+
+div.Nosotros img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #fff;
+	border-color: #606060;
+	border-width: 2px;
+	border-style: solid;
+	display:flexbox ;
+}
+
+div.Nosotros h3{
+    color: #232323;
+    font-size: 18px;
+    text-align: center;
+}
+
+div.Nosotros p{
+    color: #232323;
+    font-size: 20px;
+    text-align: center;
+}
+
+main{
+	width: 664px;
+    height: 62px;
+    text-align: center;
+	display: contents;
+}
+
+main p{
+	color: #000000;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+	opacity: 50%;
+    text-align: center;
+}
+
+main h2{
+    color: #232323;
+    font-family: "Alata";
+    font-size: 30px;
+}
+
+footer{
+	top:auto;
+	width: auto;
+    height: 100px;
+    background:#232323;
+    border-color: #000000;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+	div.Nosotros h3{
+		font-size: 22px;
+	}
+
+	footer{
+		height:50px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+	header{
+		font-size: 29px;
+	}
+	
+	nav ul li a{
+		font-size: 14px;
+	}
+
+	#columnas{
+		column-count: 1;
+		
+	}
+}

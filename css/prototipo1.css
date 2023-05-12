@@ -1,0 +1,217 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+	width: auto;
+	height: 50xp;
+	background: #1e3c72;  
+	background: -webkit-linear-gradient(to right, #2a5298, #1e3c72); 
+	background: linear-gradient(to right, #2a5298, #1e3c72); 
+	border-width: 1px;
+	border-style: solid;
+	font-size: 30px;
+	line-height: 1;
+	text-align: center;
+	display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+
+
+header img{
+	width: 50px;
+	height: 50px;
+}
+
+nav{
+	background-color: #444;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	padding: 10px;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+nav ul li{
+	margin: 0 10px;
+	display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a{
+	color: #fff;
+	width: 50px;
+    height: 18px;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+	color:#ccc;
+}
+
+div.contenido{
+	background-image: url('https://img.freepik.com/fotos-premium/cronologia-computadoras-abaco-calculadora_613961-349.jpg?w=740');
+    background-size: cover;
+    background-position: center center;
+    font-size: 18px;
+	height: 200px;
+	display:grid;
+	justify-items: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+div.contenido p{
+	background-color: azure;
+	width: 100%;
+    color: #000000;
+    font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+div.contenido p span{
+	background: azure;
+	position: absolute;
+	right: 0;
+	width: 0;
+	border-left: 2px solid #000000;
+	animation: escribir 7s steps(70) infinite alternate;
+}
+
+@keyframes escribir{
+	from{ width:100%};
+	to{ width: 0;}
+}
+
+div.contenido button{
+	background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+div.contenido button:hover{
+	background-color: #222;
+}
+
+#columnas{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+
+.resumen{
+	margin: 20px;
+    width: 47%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.resumen h2{
+    font-size: 24px;
+    font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.resumen p{
+    font-size: 18px;
+	text-align: justify;
+    line-height: 1.5;
+}
+
+body{
+	background-color: #ccc;
+}
+
+footer{
+	width: auto;
+    height: 50px;
+    background:#232323;
+    border-color: #000000;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+	div.contenido p{
+		font-size: 24px;
+	}
+
+	#columnas{
+		display: flexbox;
+		flex-wrap: wrap;
+	}
+
+	.resumen{
+		margin: 15px;
+		width: auto;
+	}
+
+	.resumen h2{
+		font-size: 20px;
+	}
+
+	.resumen p{
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	header{
+		font-size: 29px;
+	}
+
+	nav ul li a{
+		font-size: 14px;
+	}
+
+	#columnas{
+		display: flexbox;
+		flex-wrap: wrap;
+	}
+
+	div.contenido p{
+		font-size: 15px;
+		margin-bottom: 0;
+	}
+
+	div.contenido button{
+		font-size: 15px;
+	}
+	.resumen{
+		width: auto;
+	}
+
+	.resumen h2{
+		font-size: 22px;
+	}
+
+	.resumen p{
+		font-size: 16px;
+	}
+}
